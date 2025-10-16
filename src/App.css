@@ -598,3 +598,61 @@ body {
 .header {
   position: relative;
 }
+.app-wrapper,
+.demo-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.demo-container {
+  background: #f3f4f6;
+  padding-top: 80px;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  padding: 12px 24px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+  border-color: #6366f1;
+  color: #6366f1;
+  transform: translateX(-4px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
