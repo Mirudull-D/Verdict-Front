@@ -416,8 +416,7 @@ const LandingPage = ({ onTryDemo, language, onLanguageChange }) => {
         <div className="nav-container">
           <div className="nav-logo">
             <span className="logo-icon">⚖️</span>
-            <span className="logo-text">LegalAI</span>
-            <span className="logo-badge">BETA</span>
+            <span className="logo-text">Verdict</span>
           </div>
 
           <div className="nav-links">
@@ -462,10 +461,6 @@ const LandingPage = ({ onTryDemo, language, onLanguageChange }) => {
               {t.hero.cta}
               <span className="arrow">→</span>
             </button>
-            <button className="cta-btn large secondary">
-              <span className="play">▶</span>
-              {t.hero.ctaSecondary}
-            </button>
           </div>
 
           <div className="hero-stats">
@@ -475,22 +470,6 @@ const LandingPage = ({ onTryDemo, language, onLanguageChange }) => {
                 <div className="stat-label">{stat.label}</div>
               </div>
             ))}
-          </div>
-
-          {/* Floating Cards */}
-          <div className="hero-cards">
-            <div className="float-card card-1">
-              <span className="card-icon">🎤</span>
-              <span>Voice Input</span>
-            </div>
-            <div className="float-card card-2">
-              <span className="card-icon">⚖️</span>
-              <span>IPC 302</span>
-            </div>
-            <div className="float-card card-3">
-              <span className="card-icon">✅</span>
-              <span>Instant</span>
-            </div>
           </div>
         </div>
       </section>
@@ -605,47 +584,6 @@ const LandingPage = ({ onTryDemo, language, onLanguageChange }) => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-brand">
-              <div className="footer-logo">
-                <span>⚖️</span>
-                <span>LegalAI</span>
-              </div>
-              <p>Empowering justice through technology</p>
-            </div>
-
-            <div className="footer-links">
-              <div className="footer-col">
-                <h4>Product</h4>
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#impact">Impact</a>
-              </div>
-              <div className="footer-col">
-                <h4>Company</h4>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#careers">Careers</a>
-              </div>
-              <div className="footer-col">
-                <h4>Legal</h4>
-                <a href="#privacy">Privacy</a>
-                <a href="#terms">Terms</a>
-                <a href="#security">Security</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <p>© 2025 LegalAI. All rights reserved.</p>
-            <p>Built with ❤️ for Indian Law Enforcement</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
