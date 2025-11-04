@@ -185,17 +185,6 @@ const LegalTest = () => {
         </div>
       </div>
 
-      <div className="form-group checkbox-group">
-        <label>
-          <input
-            type="checkbox"
-            checked={enableTTS}
-            onChange={(e) => setEnableTTS(e.target.checked)}
-          />
-          🔊 Enable Text-to-Speech
-        </label>
-      </div>
-
       <button
         onClick={submitLegalQuery}
         disabled={loading || !narrative.trim()}

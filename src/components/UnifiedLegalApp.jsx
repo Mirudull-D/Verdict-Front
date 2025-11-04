@@ -392,17 +392,6 @@ const UnifiedLegalApp = ({ language }) => {
         </>
       )}
 
-      <div className="form-group checkbox-group">
-        <label>
-          <input
-            type="checkbox"
-            checked={enableTTS}
-            onChange={(e) => setEnableTTS(e.target.checked)}
-          />
-          🔊 {t.enableTTS}
-        </label>
-      </div>
-
       <button
         onClick={submitLegalRequest}
         disabled={loading || !content.trim()}

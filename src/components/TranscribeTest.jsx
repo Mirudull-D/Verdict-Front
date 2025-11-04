@@ -127,17 +127,6 @@ const TranscribeTest = () => {
         </select>
       </div>
 
-      <div className="form-group checkbox-group">
-        <label>
-          <input
-            type="checkbox"
-            checked={enableTTS}
-            onChange={(e) => setEnableTTS(e.target.checked)}
-          />
-          🔊 Enable Text-to-Speech Response
-        </label>
-      </div>
-
       {!permission && (
         <button onClick={getMicrophonePermission} className="submit-btn">
           🎤 Get Microphone Permission
